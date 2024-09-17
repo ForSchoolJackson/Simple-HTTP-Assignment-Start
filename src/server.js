@@ -31,6 +31,9 @@ const onRequest = (request, response) => {
     case '/dankmemes':
       imageHandler.getSpongegar(request, response);
       break;
+    case '/rich-client.html':
+      htmlHandler.getRichClient(request, response);
+      break;
     default:
       htmlHandler.getIndex(request, response);
       break;
